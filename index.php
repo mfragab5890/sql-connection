@@ -1,4 +1,4 @@
-<<?php
+<?php
 //include("connection.php");
 //$queryTest ="SELECT user FROM test ORDER BY id DESC LIMIT 1 ";
 //$resultTest= mysqli_query($link,$queryTest);
@@ -13,13 +13,12 @@ $user = "ghelpo"
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=0.35">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Metal+Mania&display=swap" rel="stylesheet">
-  <title>Cairo Events</title>
-  <!-- Load Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+    <meta name="viewport" content="width=device-width, initial-scale=0.35">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Metal+Mania&display=swap" rel="stylesheet">
+    <!-- Load Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
     <title>sql conecction test</title>
   </head>
   <body>
@@ -32,7 +31,7 @@ $user = "ghelpo"
     </div>
   <div class="latest">
     <h1>latest user is:</h1>
-    <h1><? $user ?></h1>
+    <h1><? "'.$user.'" ?></h1>
   </div>
   </body>
 </html>
