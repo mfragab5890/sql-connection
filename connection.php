@@ -2,7 +2,7 @@
 
 $user='ghelpo';
 $pass='tafiTAFI';
-$databasename='ghelpo@localhost';
+$databasename='ghelpo';
 
 date_default_timezone_set("Africa/Cairo");
 
