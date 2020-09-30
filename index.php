@@ -31,7 +31,7 @@ $user = "ghelpo"
     </div>
   <div class="latest">
     <h1>latest user is:</h1>
-    <h1><? "'.$user.'" ?></h1>
+    <h1><? echo $user ?></h1>
   </div>
   </body>
 </html>
