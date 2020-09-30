@@ -31,6 +31,7 @@ $user = $rowTest['user'];
       </form>
     </div>
   <div class="latest">
+    <h1>latest user is:</h1>
     <h1><? $user ?></h1>
   </div>
   </body>
