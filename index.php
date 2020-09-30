@@ -1,10 +1,10 @@
 <?php
-//include("connection.php");
-//$queryTest ="SELECT user FROM test ORDER BY id DESC LIMIT 1 ";
-//$resultTest= mysqli_query($link,$queryTest);
-//$rowTest = mysqli_fetch_array($resultTest);
-//$user = $rowTest['user'];
-$user = "ghelpo"
+include("connection.php");
+$queryTest ="SELECT user FROM test ORDER BY id DESC LIMIT 1 ";
+$resultTest= mysqli_query($link,$queryTest);
+$rowTest = mysqli_fetch_array($resultTest);
+$user = $rowTest['user'];
+
 
 // INSERT INTO `test` (`ID`, `created_on`, `user`) VALUES (NULL, CURRENT_TIMESTAMP, 'ghelpo');
  ?>
