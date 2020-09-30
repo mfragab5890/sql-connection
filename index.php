@@ -5,8 +5,14 @@ $resultTest= mysqli_query($link,$queryTest);
 $rowTest = mysqli_fetch_array($resultTest);
 $user = $rowTest['user'];
 
+if (array_key_exists("submit", $_POST)) {
+  $queryAdd ="INSERT INTO `test` (`ID`, `created_on`, `user`) VALUES (NULL, NULL, '".$_POST['user']."')";
+  if(!mysqli_query($link, $queryAdd))
+    {
+      $error = "can't submit  <br> ";
+    }
+}
 
-// INSERT INTO `test` (`ID`, `created_on`, `user`) VALUES (NULL, CURRENT_TIMESTAMP, 'ghelpo');
  ?>
 
 <!DOCTYPE html>
@@ -23,7 +29,7 @@ $user = $rowTest['user'];
   </head>
   <body>
     <div class="user">
-      <form class="" action="index.html" method="post">
+      <form class="" method="post">
         <label for="user">please enter your name</label>
         <input id="user" type="text" name="user" value="">
         <button type="submit" name="button">submit user</button>
