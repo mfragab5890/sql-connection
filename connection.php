@@ -9,7 +9,7 @@ date_default_timezone_set("Africa/Cairo");
 
 
 
-   $link = mysqli_connect("localhost", $user, $pass, $databasename);
+   $link = mysqli_connect($servername, $user, $pass, $databasename);
 
         if (!$link) {
 
